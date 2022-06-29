@@ -14,37 +14,37 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+        <div className='fixed w-full h-[100px] flex justify-between items-center px-4 bg-[#0e418dea] text-gray-300'>
 
             <div>
-                <img src={Logo} alt="Logo image" style={{ width: "170px" }} />
+                <img src={Logo} alt="Logo image" style={{ width: "100px", paddingTop:"10px" }} />
             </div>
 
             {/*--- Menú ---*/}
 
             <ul className='hidden md:flex'>
                 <li>
-                    <Link to="home" smooth={true} duration={500}>
+                    <Link className='hover:border-b-4 border-pink-600 duration-100' to="home" smooth={true} duration={500}>
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link to="about" smooth={true} duration={500} >
+                    <Link className='hover:border-b-4 border-pink-600 duration-100' to="about" smooth={true} duration={500} >
                         Sobre mi
                     </Link>
                 </li>
                 <li>
-                    <Link to="skills" smooth={true} duration={500} >
+                    <Link className='hover:border-b-4 border-pink-600 duration-100' to="skills" smooth={true} duration={500} >
                         Skills
                     </Link>
                 </li>
                 <li>
-                    <Link to="work" smooth={true} duration={500}>
+                    <Link className='hover:border-b-4 border-pink-600 duration-100' to="work" smooth={true} duration={500}>
                         Proyectos
                     </Link>
                 </li>
                 <li>
-                    <Link to="contact" smooth={true} duration={500}>
+                    <Link className='hover:border-b-4 border-pink-600 duration-100' to="contact" smooth={true} duration={500}>
                         Contacto
                     </Link>
                 </li>
